@@ -1,0 +1,25 @@
+{
+  "name": "ra-language-arabic",
+  "version": "0.1.0",
+  "description": "Arabic translations for React-Admin, the frontend framework for building admin applications on top of REST/GraphQL services.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developerium/ra-language-arabic.git"
+  },
+  "keywords": [
+    "react",
+    "admin-on-rest",
+    "react-admin",
+    "translation"
+  ],
+  "author": "Vahid Kheradmand",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/developerium/ra-language-arabic/issues"
+  },
+  "homepage": "https://github.com/developerium/ra-language-arabic#readme"
+}
