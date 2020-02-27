@@ -22,10 +22,13 @@ module.exports = {
       show: 'عرض التفاصيل',
       sort: 'فرز',
       undo: 'تراجع',
+      expand: 'فرد',
+      close: 'اغلاق',
     },
     boolean: {
       true: 'نعم',
       false: 'لا',
+      null: '',
     },
     page: {
       create: 'إنشاء %{name}',
@@ -36,6 +39,8 @@ module.exports = {
       loading: 'جار التحميل',
       not_found: 'غير موجود',
       show: '%{name} #%{id}',
+      empty: 'لا يوجد %{name} حتي الان',
+      invite: 'هل ترغب فى اضافة واحد ؟',
     },
     input: {
       file: {
@@ -50,6 +55,10 @@ module.exports = {
         all_missing: 'غير قادر على العثور على بيانات المراجع.',
         many_missing: 'واحد على الأقل من المراجع المرتبطة لم تعد متوفرة.',
         single_missing: 'المرجع المرتبط لم يعد يبدو متاحًا.',
+      },
+      password: {
+        toggle_visible: 'اخفاء الرقم السري',
+        toggle_hidden: 'اظهار الرقم السري',
       },
     },
     message: {
@@ -79,6 +88,7 @@ module.exports = {
       prev: 'السابق',
     },
     auth: {
+      auth_check_error: 'برجاء تسجيل الدخول للاستمرار',
       user_menu: 'الملف الشخصي',
       username: 'اسم المستخدم',
       password: 'كلمه السر',
@@ -93,6 +103,7 @@ module.exports = {
       bad_item: 'عنصر غير صحيح',
       item_doesnt_exist: 'العنصر غير موجود',
       http_error: 'خطأ في اتصال الخادم',
+      i18n_error: 'لا يمكن تحميل الترجمة لهذه اللغة',
       data_provider_error: 'خطأ في مزود البيانات. تحقق من وحدة التحكم للحصول على التفاصيل.',
       canceled: 'تم إلغاء الإجراء',
       logged_out: 'انتهت جلستك ، يرجى إعادة الاتصال.',
