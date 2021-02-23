@@ -94,6 +94,7 @@ export const arabicMessages: TranslationMessages = {
       page_rows_per_page: "الصفوف لكل صفحة:",
       next: "التالى",
       prev: "السابق",
+      skip_nav: "تخطي الى المحتوي",
     },
     sort: {
       sort_by: "رتب حسب %{field} %{order}",
