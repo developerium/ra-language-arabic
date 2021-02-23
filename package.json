@@ -2,13 +2,27 @@
   "name": "ra-language-arabic",
   "version": "0.1.5",
   "description": "Arabic translations for React-Admin, the frontend framework for building admin applications on top of REST/GraphQL services.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "yarn run build-cjs && yarn run build-esm",
+    "build-cjs": "rimraf ./lib && tsc",
+    "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+    "watch": "tsc --outDir esm --module es2015 --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/developerium/ra-language-arabic.git"
+  },
+  "files": [
+    "*.md",
+    "lib",
+    "esm",
+    "src"
+  ],
+  "module": "esm/index.js",
+  "types": "esm/index.d.ts",
+  "dependencies": {
+    "ra-core": "^3.12.5"
   },
   "keywords": [
     "react",
@@ -21,5 +35,8 @@
   "bugs": {
     "url": "https://github.com/developerium/ra-language-arabic/issues"
   },
-  "homepage": "https://github.com/developerium/ra-language-arabic#readme"
+  "homepage": "https://github.com/developerium/ra-language-arabic#readme",
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
 }
