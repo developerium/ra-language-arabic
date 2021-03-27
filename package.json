@@ -22,7 +22,7 @@
   "module": "esm/index.js",
   "types": "esm/index.d.ts",
   "dependencies": {
-    "ra-core": "^3.12.5"
+    "ra-core": "^3.13.5"
   },
   "keywords": [
     "react",
