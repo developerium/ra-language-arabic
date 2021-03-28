@@ -24,6 +24,7 @@ module.exports = {
       undo: 'تراجع',
       expand: 'فرد',
       close: 'اغلاق',
+      unselect: 'الغاء التحديد',
     },
     boolean: {
       true: 'نعم',
