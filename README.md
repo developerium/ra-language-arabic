@@ -57,6 +57,34 @@ const App = () => (
 </body>
 ```
 
+3. Add jss-rtl.
+
+You need this JSS plugin to flip the styles: jss-rtl.
+```javascript
+npm install jss-rtl
+```
+Having installed the plugin in your project, Material-UI components still require it to be loaded by the jss instance, as described below. Internally, withStyles is using this JSS plugin when direction: 'rtl' is set on the theme. Head to the plugin README to learn more about it.
+
+Once you have created a new JSS instance with the plugin, you need to make it available to all the components in the component tree. The StylesProvider component enables this:
+
+```javascript
+import { create } from 'jss';
+import rtl from 'jss-rtl';
+import { StylesProvider, jssPreset } from '@material-ui/core/styles';
+
+// Configure JSS
+const jss = create({ plugins: [...jssPreset().plugins, rtl()] });
+
+function RTL(props) {
+  return (
+    <StylesProvider jss={jss}>
+      {props.children}
+    </StylesProvider>
+  );
+}
+```
+
+
 
 ## License
 
