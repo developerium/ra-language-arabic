@@ -1,6 +1,6 @@
 {
   "name": "ra-language-arabic",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "description": "Arabic translations for React-Admin, the frontend framework for building admin applications on top of REST/GraphQL services.",
   "main": "lib/index.js",
   "scripts": {
