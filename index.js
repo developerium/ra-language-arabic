@@ -24,6 +24,7 @@ module.exports = {
       undo: 'تراجع',
       expand: 'فرد',
       close: 'اغلاق',
+      unselect: "الغاء التحديد"
     },
     boolean: {
       true: 'نعم',
@@ -86,6 +87,7 @@ module.exports = {
       page_rows_per_page: 'الصفوف لكل صفحة:',
       next: 'التالى',
       prev: 'السابق',
+      skip_nav: "انتقل الى المحتوى"
     },
     auth: {
       auth_check_error: 'الرجاء تسجيل الدخول للاستمرار',
